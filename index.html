@@ -3,47 +3,92 @@
 
 <head>
 	<meta charset="uTf-8" />
+	<title>PMツール</title>
 </head>
-
+<style>
+body {
+	margin: 0;
+	display: flex;
+	background-color: white;
+	width: 100vh;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	z-index: 1000;
+}
+header.div {
+	padding: 10px;
+}
+nav {
+	width: 200px;
+	height: 100vh;
+	padding-top: 40px;
+}
+main {
+	flex:1;
+	padding: 50px 20px 20px 20px;
+}
+</style>
 <body>
 	<header>
 		<div id="id">000000000001</div>
 		<div id="name">KOTARO YATABE</div>
+		<div id="project">個人開発</div>
 	</header>
-	<div id="schedule">
-		<table border=1>
-			<tr>
-				<th>日付</th>
-				<td>10/6</td>
-				<td>10/7</td>
-				<td>10/8</td>
-				<td>10/9</td>
-				<td>10/10</td>
-				<td>10/11</td>
-				<td>10/12</td>
-			</tr>
-			<tr>
-				<th>曜日</th>
-				<td>月</td>
-				<td>火</td>
-				<td>水</td>
-				<td>木</td>
-				<td>金</td>
-				<td>土</td>
-				<td>日</td>
-			</tr>
-			<tr>
-				<th>予定</th>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
-	</div>
+	<nav>
+		<ul>
+			<li><a href="#">WBS一覧</a></li>
+			<li><a href="#">アサイン</a></li>
+			<li><a href="#">進捗</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div id="schedule">
+			<table border=1>
+				<tr>
+					<th>日付</th>
+					<td>10/6</td>
+					<td>10/7</td>
+					<td>10/8</td>
+					<td>10/9</td>
+					<td>10/10</td>
+					<td>10/11</td>
+					<td>10/12</td>
+				</tr>
+				<tr>
+					<th>曜日</th>
+					<td>月</td>
+					<td>火</td>
+					<td>水</td>
+					<td>木</td>
+					<td>金</td>
+					<td>土</td>
+					<td>日</td>
+				</tr>
+				<tr>
+					<th むwspan=""><a href="#">PJ1_1_MTG</a></th>
+					<td><a href="#">山田花子</a>(0.5)<br><a href="#">田中太郎</a>(0.5)</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</main>
 </body>
 
 </html>
