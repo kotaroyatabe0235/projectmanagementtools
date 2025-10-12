@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang='ja'>
+
+<head>
+	<meta charset="uTf-8" />
+	<title>PMツール</title>
+</head>
+<style>
+body {
+	margin: 0;
+	display: flex;
+	background-color: white;
+	width: 100vh;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	z-index: 1000;
+}
+header.div {
+	padding: 10px;
+}
+nav {
+	width: 200px;
+	height: 100vh;
+	padding-top: 40px;
+}
+main {
+	flex:1;
+	padding: 50px 20px 20px 20px;
+}
+</style>
+<body>
+	<header>
+		<div id="id"><a href="#">000001</a></div> 
+		<div id="name"><a href="#">KOTARO</a></div> 
+		<div id="project"><a href="#">PJT名</a></div> 
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">WBS</a></li>
+			<li><a href="#">進捗状況</a></li>
+			<li><a href="#">課題管理</a></li>
+			<li><a href="#">リスク管理</a></li>
+			<li><a href="#">変更管理</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div id="wbs">
+			<table border="1">
+				<tr>
+					<th colspan="5">#</th>
+					<th>summary</th>
+					<th>outputs</th>
+					<th>costs</th>
+					<th>assignee</th>
+					<th>reviewer</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>management</td>
+					<td></td>
+					<td>100d</td>
+					<td>k</td>
+					<td>y</td>
+					<td><button>create subtask</button></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>join the meeting</td>
+					<td></td>
+					<td>100d</td>
+					<td>k</td>
+					<td>y</td>
+					<td><button>create subtask</button></td>
+				</tr>
+			</table>
+ 		</div>			
+	</main>
+</body>
+
+</html>
